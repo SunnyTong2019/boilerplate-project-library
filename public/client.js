@@ -78,6 +78,8 @@ $( document ).ready(function() {
       data: $('#newBookForm').serialize(),
       success: function(data) {
         //update list
+        $('#detailTitle').html('');
+        $('#detailComments').html('<p style="color: red;">'+data+'</p><p>Refresh the page</p>');
       }
     });
   }); 
